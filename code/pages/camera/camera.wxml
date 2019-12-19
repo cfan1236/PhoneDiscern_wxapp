@@ -1,0 +1,15 @@
+<camera device - position="width" flash="off" style="height:{{height}}px;">
+  <cover-view class='camerabgImage-view'>
+     <cover-image class='bgImage' src='../images/bg2.png'> </cover-image> 
+    <cover-view class='cameraTips'>请对准电话号码扫描</cover-view>
+    <cover-view class="cameraTips2">*支持打印和手写号码识别</cover-view>
+    <cover-view class="cameraBgView">
+      <cover-image class='cancelphoto' src='../images/cancelPhoto2.png' bindtap='cancelPhoto'></cover-image>
+      <cover-view class='cameraButton-view'>
+        <cover-image class='takephoto' src='../images/takephoto.png' bindtap='takePhoto'></cover-image>
+      </cover-view>
+    </cover-view>
+
+  </cover-view>
+
+</camera>

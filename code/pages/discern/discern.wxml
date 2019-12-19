@@ -1,0 +1,29 @@
+<!--pages/discern/discern.wxml-->
+<canvas canvas-id="image-canvas" style='width:{{width}}px; height:{{windowHeight-130}}rpx;margin-top:{{canvas_top}}rpx;'></canvas>
+<view class="frame">
+  <text style="color:blue;font-size:40rpx">识别结果</text>
+  <view class="result">
+    <input value="{{discernResult.text}}" class="phone_input" type="number" bindinput="phoneNumberInput"></input>
+    <image class="callPhone_img" src="../images/call.png" mode="widthFix"  wx:if="{{showResult}}" bindtap="callPhone"></image>
+    <text class="result_text">{{discernResult.message}}</text>
+      <text class="none_phone" wx:if="{{showNonePhone}}">暂未识别到电话号码</text>
+    <text class="result_text" style="font-size:25rpx;" wx:if="{{showResult}}">识别结果可点击修改</text>
+  </view>
+  <view wx:if="{{showResult}}">
+    <text style="color:blue;">用户标记</text>
+    <view class="mark" style="border-color: #fdb383">
+      <view wx:for="{{userMark}}" wx:for-item="item">
+        <text class="el-tag" bindtap="submitMark">{{item.name+'('+item.count+')'}}</text>
+      </view>
+      <text class="mark_tips" wx:if="{{showMarkTips}}">暂无用户提交标记</text>
+    </view>
+
+    <text style="color:blue;">提交标记</text>
+    <view class="mark">
+      <view wx:for="{{markList}}" wx:for-item="item">
+        <text class="el-tag" bindtap="submitMark" data-id="{{item.index}}">{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+
+</view>

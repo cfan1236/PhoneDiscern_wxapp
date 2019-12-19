@@ -1,0 +1,75 @@
+/* pages/camera/camera.wxss */
+
+page {
+  width: 100%;
+  height: 100%;
+}
+
+/* 背景图像view */
+
+.camerabgImage-view {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* 背景图像 */
+
+.bgImage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* 提示文本 */
+
+.cameraTips {
+  margin-top: 105rpx;
+  text-align: center;
+  font-size: 40rpx;
+  color: #fe9d20;
+}
+/* 提示文本2 */
+.cameraTips2 {
+  margin-top: 22%;
+  text-align: center;
+  color: #fff;
+}
+
+/* 拍照背景view */
+.cameraBgView {
+  bottom: 10px;
+  height: 230rpx;
+  position: absolute;
+  width: 100%;
+  display: flex;
+}
+
+/* 按钮view*/
+.cameraButton-view {
+  height: 200rpx;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* 取消按钮 */
+
+.cancelphoto {
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+  z-index: 2;
+  margin-left: 80rpx;
+  margin-top: 40rpx;
+}
+
+/* 拍照按钮 */
+
+.takephoto {
+  border-radius: 999px;
+  box-shadow: 0 0 50rpx #ffd8a2;
+  width: 152rpx;
+  height: 152rpx;
+}

@@ -1,0 +1,5 @@
+
+<view class="container">
+  <image  style="width:30%;;margin-top:20%" src="../images/start.png" bindtap="start" mode="widthFix"></image>
+  <text>点击按钮开始识别</text>
+</view>

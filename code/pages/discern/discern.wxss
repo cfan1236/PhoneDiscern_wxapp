@@ -1,0 +1,90 @@
+/* pages/discern/discern.wxss */
+
+page {
+  overflow: visible;
+  background-color: #b3d4db;
+}
+/* 总框架 */
+.frame {
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+/* 结果区域 */
+.result {
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  height: 300rpx;
+  border: 2rpx solid;
+  border-color: #0aba07;
+  display: flex;
+  flex-flow: row wrap; 
+}
+/* 标记 */
+.mark {
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  height: 100rpx;
+  border: 2rpx solid;
+  border-color: #fed787;
+  display: flex;
+  flex-flow: row wrap; 
+}
+/* 拨电话按钮 */
+.callPhone_img {
+  width: 95rpx;
+  margin-top: 40rpx;
+  margin-right: 15rpx;
+}
+/* 电话号码input */
+.phone_input {
+  margin-top: 50rpx;
+  margin-left: 20rpx;
+  text-align: center;
+  font-size: 65rpx;
+  height: 65rpx;
+  color: #0c64eb;
+  max-width: 75%;
+}
+/*未识别到号码*/
+.none_phone{
+ text-align: center;
+  color: #f76260;
+  font-size: 65rpx;
+  margin-left: 50rpx;
+  margin-bottom: 150rpx;
+
+}
+/* 识别结果文本区域 */
+.result_text {
+  width: 100%;
+  margin-left: 20rpx;
+  color: #10aeff;
+}
+/* 标记提示 */
+.mark_tips {
+  width: 100%;
+  margin-left: 20rpx;
+  color: #10aeff;
+  text-align: center;
+  margin-top: 20rpx;
+}
+/* 标记方块 */
+.el-tag {
+
+  display: inline-block;
+  padding: 0 9rpx;
+  height: 70rpx;
+  line-height: 60rpx;
+  margin-top: 15rpx;
+  margin-left: 10rpx;
+  font-size: 35rpx;
+  border-radius: 7rpx;
+  box-sizing: border-box;
+  border: 3rpx solid rgba(64, 158, 255, 0.2);
+  white-space: nowrap;
+  background-color: #fea500;
+  border-color: #f6b5b7;
+  color: #10aeff;
+  cursor: pointer;
+}
